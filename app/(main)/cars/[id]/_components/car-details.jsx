@@ -252,11 +252,11 @@ export function CarDetails({ car, testDriveInfo }) {
                 about this vehicle.
               </p>
               <a 
-                href="https://wa.me/919876543210?text=Hi, I need more information about this car: {car.year} {car.make} {car.model}"
+                href="https://wa.me/919353472169?text=Hi, I need more information about this car: {car.year} {car.make} {car.model}"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Button variant="outline" className="w-full flex items-center gap-2">
+                <Button variant="outline" className="w-full bg-green-400 flex items-center gap-2">
                   <MessageSquare className="h-4 w-4" />
                   Chat on WhatsApp
                 </Button>
