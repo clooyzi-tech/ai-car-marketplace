@@ -15,7 +15,13 @@ import Image from "next/image";
 import { bodyTypes, carMakes, faqItems } from "@/lib/data";
 
 export default async function Home() {
-  const featuredCars = await getFeaturedCars();
+  let featuredCars = [];
+  try {
+    featuredCars = await getFeaturedCars();
+  } catch (error) {
+    console.error('Error fetching featured cars:', error);
+    featuredCars = [];
+  }
 
   return (
     <div className="flex flex-col">
